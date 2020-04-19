@@ -3,7 +3,7 @@ plugin: gcp_compute
 zones:
  - us-east1-b
 projects:
-  - aiot-249002
+ - project-id-8122930850481580817
 filters: []
 groups:
   webservers: "'web-' in name"

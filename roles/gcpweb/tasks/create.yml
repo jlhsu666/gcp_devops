@@ -20,6 +20,7 @@
 - name: create a firewall
   gcp_compute_firewall:
     name: ansible-firewall
+    network: "{{ network|default({'network':'networks/ansible-network'}) }}"
     allowed:
     - ip_protocol: tcp
       ports: ['80','22']
